@@ -107,19 +107,19 @@ body{
   background-color: #fff;
 }
 .present{
-  margin: 0 20px 0 26px;
-  background-color: #3ab13a;
+  margin: 0 20px 0 18px;
+  background-color: #363836;
   color: #fff;
-  width: 70px;
+  width: 78px;
   border-radius: 8px;
 }
 .absent{
   /* margin: 15px 0 0 140px; */
   /* margin-right: -60px; */
   margin-left: 38px;
-  background-color: #ff2600;
+  background-color: #363836;
   color: #fff;
-  width: 70px;
+  width: 78px;
   border-radius: 8px;
   
 }

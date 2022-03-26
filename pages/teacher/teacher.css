@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #92A9BD;
+  background-color: #fff;
 }
 body {
   overflow: hidden;
@@ -35,7 +35,7 @@ body {
   background-color: #35858b;
 }
 .subject-list {
-  background-color: #ADD8E6;
+  background-color: #ffffff;
   border: 2px solid #333;
   width: 20vw;
   height: 90vh;
@@ -54,7 +54,7 @@ legend.sub-leg {
 }
 legend.table-leg {
   font-weight: bold;
-  background-color: #3c167c;
+  background-color: #0d6efd;
   border: 2px solid #333;
   padding: 5px 10px 5px 10px;
   border-radius: 5px;
@@ -63,6 +63,7 @@ legend.table-leg {
 }
 .table-t{
   margin: 10vh 7.5vw;
+  background-color: #8D8DAA;
   
 }
 .subject-list p {
@@ -76,12 +77,12 @@ legend.table-leg {
   font-weight: bold;
   width: 90%;
   border-radius: 5px;
-  background: #3c167c;
+  background: #0d6efd;
   color: #fff;
   font-size: medium;
 }
 .time-table {
-  background-color: #ADD8E6;
+  background-color: #ffffff;
   width: 74vw;
   height: 90vh;
   margin-right: 20px;
