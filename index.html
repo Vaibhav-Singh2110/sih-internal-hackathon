@@ -20,15 +20,15 @@
             </div>
             <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
               <form onsubmit="login()" id="loginForm">
-                <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                <!-- <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
                   <p class="lead fw-normal mb-0 me-3">Sign in with</p>
-                  <!-- <button type="button" class="btn btn-primary btn-floating mx-1">
+                  <button type="button" class="btn btn-primary btn-floating mx-1">
                     <i class="fab fa-"></i>
-                  </button> -->
+                  </button>
       
-                  <!-- <button type="button" class="btn btn-primary btn-floating mx-1">
+                  <button type="button" class="btn btn-primary btn-floating mx-1">
                     <i class="fab fa-twitter"></i>
-                  </button> -->
+                  </button>
       
                   <button type="button" class="btn btn-primary btn-floating mx-1">
                     <i class="fab fa-google"></i>
@@ -37,20 +37,20 @@
       
                 <div class="divider d-flex align-items-center my-4">
                   <p class="text-center fw-bold mx-3 mb-0">Or</p>
-                </div>
-      
+                </div> -->
+                <br><br>
                 <!-- Email input -->
                 <div class="form-outline mb-4">
+                    <label class="form-label" >Email address</label>
                   <input type="text" id="email" required class="form-control form-control-lg"
                     placeholder="Enter a valid email address" />
-                  <label class="form-label" >Email address</label>
                 </div>
       
                 <!-- Password input -->
                 <div class="form-outline mb-3">
+                    <label class="form-label" >Password</label>
                   <input type="password" id="password" class="form-control form-control-lg"
                     placeholder="Enter password" />
-                  <label class="form-label" >Password</label>
                 </div>
       
                 <div class="d-flex justify-content-between align-items-center">
@@ -74,31 +74,9 @@
             </div>
           </div>
         </div>
-<<<<<<< HEAD
-        <form onsubmit="login()" id="loginForm" class="card-body px-5 py-4">
-            <center><small><span id="error" style="color: red"></span></small></center>
-            <center><label class="custom-field">
-                    <input id="email" type="text" class="input" required />
-                    <span class="placeholder">Email Id</span>
-                </label><br />
-                <label class="custom-field">
-                    <input id="password" type="password" class="input" required />
-                    <span class="placeholder">Password</span>
-                </label>
-            </center><br>
-            <a href="#" onclick="forgotPass()">Forgot Password</a>
-            <br><br>
-            <center><button type="submit" class="btn btn-primary">Login</button>
-                <button onclick="signUp()" class="btn btn-secondary">Sign Up</button>
-            </center>
-        </form>
-    </div>
-    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
-=======
         
       </section>
       <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
->>>>>>> c29bd0a88432781275eeb47d0810c70e55ebdfc4
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
     <script src="firebase.js"></script>

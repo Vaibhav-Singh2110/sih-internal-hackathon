@@ -8,7 +8,6 @@ firebase.auth().onAuthStateChanged((user)=>{
         location.replace("pages/teacher/teacher.html")
     }
     else{
-        // location.replace("pages/teacher/teacher.html")
         location.replace("pages/invalid.html")
     }
 })
