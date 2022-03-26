@@ -39,6 +39,7 @@ firebase.auth().onAuthStateChanged((user) => {
     }
     else if(sdnt.indexOf(user.uid)!== -1){
         alert('student')
+        location.replace("pages/student/student.html")
     }
     else {
         location.replace("pages/invalid.html")
