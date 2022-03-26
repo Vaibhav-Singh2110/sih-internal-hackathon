@@ -64,7 +64,7 @@
       https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
-
+    <script src="../../readWrite.js"></script>
     <script src="../../firebase.js"></script>
     <script src="../../welcome.js"></script>
     <script src="../../scripts/buttonMove.js"></script>
@@ -80,12 +80,12 @@
             btn.type = "button";
             // btn.className = "btn";
             btn.value = "present";
-            // btn.onclick = (function (entry) { return function () { chooseUser(entry); } })(entry);
+            btn.onclick = writeUserData(usn.value,1);
             var btn2 = document.createElement('input');
             btn2.type = "button";
             // btn2.className = "btn";
-            btn2.value = "absent";
-            // btn2.onclick = (function (entry) { return function () { chooseUser(entry); } })(entry);
+            btn2.value = "absent"
+            btn2.onclick = writeUserData(usn,0);
             
             td1.innerHTML = usn;
             td2.innerHTML = name;
