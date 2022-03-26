@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEEDBACK</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="../teacher/teacher_home.html">Home</a></li>
+            <li><a class="active" href="#contact">Feedback</a></li>
+            <li><a href="#" onclick="logout()">Logout</a></li>
+        </ul>
+    </div>
+    <div>
+        <form action="">
+            <label>Fullname: </label><input type="text" id="Namebox"><br><br>
+            <label>Email: </label><input type="email" id="Emailbox"><br><br>
+            <label>Phone no.: </label><input type="text" id="Pnobox"><br><br>
+            <label>Subject: </label><input type="text" id="Subbox"><br><br>
+            <label>Feedback:</label><textarea id="Feedback" name="subject" placeholder="Write something.."
+                style="height:200px"></textarea>
+            <br><br>
+            <hr>
+            <br>
+            <button id="Insbtn">Submit</button>
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"></script>
+    <script src="../../firebase.js"></script>
+    <script src="../../welcome.js"></script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
+        const firebaseConfig = {
+            apiKey: "AIzaSyB289EyEPf0jziSU7TB4jOBI_2RmiAJWEo",
+            authDomain: "sih2022-wor.firebaseapp.com",
+            projectId: "sih2022-wor",
+            storageBucket: "sih2022-wor.appspot.com",
+            messagingSenderId: "82958210068",
+            appId: "1:82958210068:web:7f6de4b3e914c0b46dc301"
+        };
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+
+        import { getDatabase, ref, set, get, child, update, remove } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js"
+        const db = getDatabase();
+        var namebox = document.getElementById("Namebox");
+        var emailbox = document.getElementById("Emaibox");
+        var phnbox = document.getElementById("Pnobox");
+        var subbox = document.getElementById("Subbox");
+        var feedback = document.getElementById("Feedback");
+
+        var insBtn = document.getElementById("Insbtn");
+
+        function InsertData() {
+            set(ref(db, "theFeedback/" + phnbox.value), {
+                Name: namebox.value,
+                Email: emailbox.value,
+                Phone: phnbox.value,
+                Subject: subbox.value,
+                Feedback: feedback.value
+            })
+                .then(() => {
+                    alert("Data stored successfully");
+                })
+                .catch((error) => {
+                    alert("Unsuccessful, error:" + error);
+                })
+        }
+
+        insBtn.addEventListener('click', InsertData());
+    </script>
+</body>
+
+</html>
