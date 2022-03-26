@@ -4,7 +4,7 @@ let barChart = new Chart(myChart,{
     data:{
         labels:['MATHS','PHYSICS','CHEMISTRY','ENGLISH','OPTIONAL','CO-CURRICULAR'],
         datasets:[{
-            label:'Attendance',
+            label:'Attendance Per Subject',
             data:[
             80,60,70,85,65,76
         ],

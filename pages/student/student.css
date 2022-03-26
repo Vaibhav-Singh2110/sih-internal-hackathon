@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #92A9BD;
+    background-color: #fff;
 }
 body{
     overflow: hidden;
@@ -33,11 +33,11 @@ body{
   }
   
   .navbar li a:hover:not(.active) {
-    background-color: #35858B;
+    background-color: #0051ff79;
   }
   
   .active {
-    background-color: #35858B;
+    background-color: #0051ff79;
   }
  
   .subject-list{
@@ -56,13 +56,13 @@ body{
     margin:5px 0 100px 0px;
     width: 25vw;
     border-radius: 10px;
-    background: #5902EC;
+    background: #6558f5;
     color: #fff;
     font-size:medium;
   }
 
   .attendance-graph{
-    background-color: #92A9BD;
+    background-color: #ffffff;
     width: 67vw;
     height: 86.5vh;  
     margin-right: 20px;
