@@ -81,6 +81,7 @@
       measurementId: "G-SCPZECS5DJ"
     };
 
+<<<<<<< HEAD
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
     import { getDatabase, ref, child, onValue, get } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-database.js";
@@ -106,6 +107,34 @@
       btn2.className = "present";
       btn2.value = "absent"
       // btn2.onclick = writeUserData(usn,0);
+=======
+    <script src="../../firebase.js"></script>
+    <script src="../../welcome.js"></script>
+    <script src="../../scripts/buttonMove.js"></script>
+    <script type="module">
+        var slno = 0;
+        var tbody = document.getElementById("tbody1");
+        function addDay(usn, name) {
+            let trow = document.createElement("tr");
+            let td1 = document.createElement('th');
+            let td2 = document.createElement('th');
+            let td3 = document.createElement('th');
+            var btn = document.createElement('input');
+            btn.type = "button";
+            btn.className = "present";
+            btn.value = "present";
+            // btn.onclick = (function (entry) { return function () { chooseUser(entry); } })(entry);
+            var btn2 = document.createElement('input');
+            btn2.type = "button";
+            btn2.className = "present";
+            btn2.value = "absent";
+            // btn2.onclick = (function (entry) { return function () { chooseUser(entry); } })(entry);
+            
+            td1.innerHTML = usn;
+            td2.innerHTML = name;
+            td3.appendChild(btn);
+            td3.appendChild(btn2);
+>>>>>>> d4b2f602f72da2b8d2add83e7459aca313f89fff
 
       td1.innerHTML = usn;
       td2.innerHTML = name;
