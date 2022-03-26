@@ -18,7 +18,6 @@
         </ul>
     </div>
     <div>
-<<<<<<< HEAD
         <form id="atndform">
             <input type="date" id="atndDate">
             <table>
@@ -29,29 +28,10 @@
                 </thead>
                 <tbody id="atndbody"></tbody>
             </table>
-=======
-        <form>
-            
->>>>>>> c29bd0a88432781275eeb47d0810c70e55ebdfc4
         </form>
     </div>
 
-    <div>
-        <table border="5" cellspacing="8" class="table-t">
-            <thead>
-                <th align="center" height="50" width="100"><br><b>Day/Period</b></br></th>
-                <th align="center" height="50" width="100"><b>I<br>8:00-9:00</b></th>
-                <th align="center" height="50" width="100"><b>II<br>0:00-10:00</b></th>
-                <th align="center" height="50" width="100"><b>III<br>10:30-11:30</b></th>
-                <th align="center" height="50" width="100"><b>IV<br>11:30-12:30</b></th>
-                <th align="center" height="50" width="100"><b>V<br>2:00-3:00</b></th>
-                <th align="center" height="50" width="100"><b>VI<br>3:00-4:00</b></th>
-                <th align="center" height="50" width="100"><b>VII<br>4:00-5:00</b></th>
-            </thead>
-            <tbody id="tbody1"></tbody>
-        </table>
-    </div>
-
+    
 
 
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
@@ -59,11 +39,6 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
     <script src="../../firebase.js"></script>
     <script src="../../welcome.js"></script>
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> c29bd0a88432781275eeb47d0810c70e55ebdfc4
     <script src="https://www.gstatic.com/firebasejs/9.6.9/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.9/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.9/firebase-database.js"></script>
@@ -80,46 +55,33 @@
         };
         firebase.initializeApp(firebaseConfig);
 
-        function addItemsToTable(usn, name) {
-            var tbody = document.getElementById('atndform');
+        
+        function addStudentToTable(usn,name){
+            var tbody = document.getElementById("atndbody");
             var trow = document.createElement('tr');
             var td1 = document.createElement('td');
             var td2 = document.createElement('td');
             var td3 = document.createElement('td');
-            var td4 = document.createElement('td');
-            var td5 = document.createElement('td');
-            var td6 = document.createElement('td');
-            var td7 = document.createElement('td');
-            var td8 = document.createElement('td');
-            td1 = da;
-            td2 = a;
-            td3 = b;
-            td4 = c;
-            td5 = d;
-            td6 = e;
-            td7 = f;
-            td8 = g;
+            // var td4 = document.createElement('input');
+            // td4.setAttribute('type','radio');
+            // td4.setAttribute('value','present');
+            // td4.setAttribute('name',usn);
+            // var td5 = document.createElement('input');
+            // td5.setAttribute('type','radio');
+            // td5.setAttribute('value','absent');
+            // td5.setAttribute('name',usn);
+
+            // td1=usn;
+            // td2=name;
+            // td3='present'+td4+'absent'+td5;
+
             trow.appendChild(td1);
             trow.appendChild(td2);
             trow.appendChild(td3);
-            trow.appendChild(td4);
-            trow.appendChild(td5);
-            trow.appendChild(td6);
-            trow.appendChild(td7);
-            trow.appendChild(td8);
             tbody.appendChild(trow);
         }
-        function addStudentToTable(usn,name){
-            var tbody = document.getElementById('atndbody');
-            var trow = document.createElement('tr');
-            var td1 = document.createElement('td');
-            var td2 = document.createElement('td');
-            var td3 = document.createElement('td');
-            
-
-        }
         function selectAllData() {
-            firebase.database().ref('testData').on('value',
+            firebase.database().ref('classA').on('value',
                 funcntion(AllRecord){
                 AllRecord.forEach(
                     function (CurrentRecord) {
@@ -138,7 +100,7 @@
             });
         }
 
-        window.onload = selectAllData;
+        window.onload = addStudentToTable('1si20is001','shreyanshu');
 
 
     </script>
