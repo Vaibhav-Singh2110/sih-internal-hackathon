@@ -3,8 +3,13 @@ document.getElementById("loginForm").addEventListener("submit",(event)=>{
 })
 
 firebase.auth().onAuthStateChanged((user)=>{
-    if(user){
+    var teach= ['CEAcPVJHzsROJs6PkcAFCP9YBfs2','NriIkZ3JiRcMXkrZ64BDq3BJ1uv2','CAUS4elywCPsNYtSbcg3QUTNVtf1','4KdjFFhx55O6iRAayXTscBoFSLk1','AYKNvKG3GXU4anaO2vfVmOeh9SL2'];
+    if(teach.indexOf(user.uid)!== -1){
         location.replace("pages/teacher/teacher.html")
+    }
+    else{
+        // location.replace("pages/teacher/teacher.html")
+        location.replace("pages/invalid.html")
     }
 })
 
@@ -35,8 +40,4 @@ function forgotPass(){
     .catch((error) => {
         document.getElementById("error").innerHTML = error.message
     });
-<<<<<<< HEAD
-
-=======
 }
->>>>>>> b7413bb22f6e0c8aff5657f8160bf0a3bd458fcb
