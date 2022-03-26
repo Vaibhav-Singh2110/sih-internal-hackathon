@@ -3,8 +3,12 @@ document.getElementById("loginForm").addEventListener("submit",(event)=>{
 })
 
 firebase.auth().onAuthStateChanged((user)=>{
-    if(user){
+    if(user.uid == 't0tGyatVM4g9S1zYtTBNUT04Asp2'){
+        //alert(user.uid)
         location.replace("pages/teacher/teacher.html")
+    }
+    else if (user.uid == 'AYKNvKG3GXU4anaO2vfVmOeh9SL2') {
+        location.replace("pages/teacher/take_attendance.html")
     }
 })
 
@@ -35,8 +39,4 @@ function forgotPass(){
     .catch((error) => {
         document.getElementById("error").innerHTML = error.message
     });
-<<<<<<< HEAD
-
-=======
 }
->>>>>>> b7413bb22f6e0c8aff5657f8160bf0a3bd458fcb
