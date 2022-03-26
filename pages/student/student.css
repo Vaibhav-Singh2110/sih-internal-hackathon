@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #92A9BD;
+}
+body{
+    overflow: hidden;
+    
+}
+.navbar{
+    height: 50px;
+    width: 100vw;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    /* float: right; */
+  }
+  
+  .navbar li {
+    float: right;
+  }
+  
+  .navbar li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar li a:hover:not(.active) {
+    background-color: #35858B;
+  }
+  
+  .active {
+    background-color: #35858B;
+  }
+ 
+  .subject-list{
+      background-color: aliceblue;
+      width: 25vw;
+      height: 90vh;
+      margin-left: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+  }
+  .subject-list p{
+      font-weight: bold;
+  }
+ .sub-button{
+    margin:5px 0 100px 0px;
+    width: 25vw;
+    border-radius: 10px;
+    background: #5902EC;
+    color: #fff;
+    font-size:medium;
+  }
+
+  .attendance-graph{
+    background-color: #92A9BD;
+    width: 67vw;
+    height: 86.5vh;  
+    margin-right: 20px;
+    margin-top: -86.9vh;
+    margin-bottom: 20px;
+    margin-left: 30vw;
+    border: 2px solid rgb(138, 133, 133);
+  }
+
+
+  @media screen and (min-width: 250px) {
+    #myChart{
+      margin-top: 21.8vh;
+    }
+    .attendance-graph{
+      margin-right: 10px;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    #myChart{
+      margin-top: 8vh;
+    }
+  }

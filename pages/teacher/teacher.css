@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #92A9BD;
+}
+body {
+  overflow: hidden;
+}
+.navbar {
+  height: 50px;
+  width: 100vw;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  /* float: right; */
+}
+.navbar li {
+  float: right;
+}
+.navbar li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar li a:hover:not(.active) {
+  background-color: #35858b;
+}
+.active {
+  background-color: #35858b;
+}
+.subject-list {
+  background-color: #ADD8E6;
+  border: 2px solid #333;
+  width: 20vw;
+  height: 90vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+legend.sub-leg {
+  color: black;
+  background-color: aliceblue;
+  border:2px solid #333;
+  padding: 5px;
+  border-radius: 3px;
+}
+legend.table-leg {
+  font-weight: bold;
+  background-color: #3c167c;
+  border: 2px solid #333;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 40px;
+}
+.table-t{
+  margin: 10vh 7.5vw;
+  
+}
+.subject-list p {
+  font-weight: bold;
+}
+.sub-button {
+  /* margin: 5px 5px 20px 5px; */
+  margin-top: 10px;margin-bottom: 10px;
+  margin-left: 5%;margin-right: 5%;
+  padding: 5px;
+  font-weight: bold;
+  width: 90%;
+  border-radius: 5px;
+  background: #3c167c;
+  color: #fff;
+  font-size: medium;
+}
+.time-table {
+  background-color: #ADD8E6;
+  width: 74vw;
+  height: 90vh;
+  margin-right: 20px;
+  margin-top: -92vh;
+  margin-bottom: 10px;
+  margin-left: 24vw;
+  border: 2px solid #333;
+  border-radius: 10px;
+  
+  
+}
+@media  screen and (max-width: 250px) {
+  /* horizontal scrollbar for tables if mobile screen */
+  .time-table {
+      overflow-x: auto;
+      display: block;
+  }
+}
+/* @media screen and (min-width: 250px) {
+  .time-table{
+    width: 74vw;
+  }
+} */
+.table {
+  margin: 55px 0 0 55px;
+}
+
+/* @media screen and (min-width: 250px) {
+  .table{
+      width: 50px;
+  }
+  } */
+tbody tr th {
+  font-weight: bold;
+  text-align: center;
+  height: 50px;
+}
+tbody tr td {
+  text-align: center;
+}

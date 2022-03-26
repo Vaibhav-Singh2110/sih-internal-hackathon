@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #92A9BD;
+}
+body{
+    overflow: hidden;
+    
+}
+.xyz{
+  clip-path: circle(50% at 50% 50%);
+}
+.navbar{
+    height: 50px;
+    width: 100vw;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    /* float: right; */
+  }
+  
+  .navbar li {
+    float: right;
+  }
+  
+  .navbar li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar li a:hover:not(.active) {
+    background-color: #35858B;
+  }
+  
+  .active {
+    background-color: #35858B;
+  }
+ 
+  .subject-list{
+      background-color: aliceblue;
+      width: 25vw;
+      height: 86.5vh;
+      margin-left: 20px;
+      margin-top: 35px;
+      margin-bottom: 1px;
+      display: inline-block;
+      font-weight: bolder;
+      font-size: x-large;
+      text-align: center;
+
+
+  }
+  .subject-list p{
+      font-weight: bold;
+  }
+ /* .sub-button{
+    margin:5px 0 100px 0px;
+    width: 25vw;
+    border-radius: 10px;
+    background: #5902EC;
+    color: #fff;
+    font-size:medium;
+  } */
+
+  .stu-detail{
+      height: 73vh;
+      width: 20vw;
+      background-color: #b4b4b4;
+      margin: 4vh 0 3vh 2.5vw;
+      font-weight: 300;
+      font-size:medium;
+  }
+  .stu-detail img{
+      width: 15vw;
+      /* margin-top: 2vw;
+      margin-bottom: 8vh; */
+      margin: 1vh 2.5vw;
+  }
+  .attendance-history{
+    background-color: #92A9BD;
+    width: 67vw;
+    height: 86.5vh;  
+    margin-right: 10px;
+    margin-top: -86.9vh;
+    margin-bottom: 20px;
+    margin-left: 31vw;
+    border: 2px solid rgb(138, 133, 133);
+    overflow-x: scroll;
+    display: inline-block;
+  }
+.status{
+    --box-color :rgb(252, 252, 252);
+    height: 2vh;
+    width: 2vw;
+    background-color: var(--box-color);
+    display: inline-block;
+    margin: 2vh;
+
+}
+
+
+  /* @media screen and (min-width: 250px) {
+    #myChart{
+      margin-top: 21.8vh;
+    }
+    .attendance-graph{
+      margin-right: 10px;
+    }
+  } */
+  /* @media screen and (min-width: 900px) {
+    #myChart{
+      margin-top: 8vh;
+    }
+  } */
+  .left{
+      float: left;
+      margin-right: 3.5vw;
+  }
+  .right{
+      float:right;
+      padding-right: 30px;
+      font-size:medium;
+  }
+  .calendar-view{
+      background-color: #8A39E1;
+      height: 25vh;
+      width: 64vw;
+      margin: 50px 10px 0px 15px;
+      overflow: scroll;
+
+  }
+  .calendar-view1{
+    background-color: #8A39E1;
+    height: 25vh;
+    width: 64vw;
+    margin: 20px 10px 0px 15px;
+    overflow: scroll;
+}
+.calendar-view-last{
+    background-color: #8A39E1;
+    height: 25vh;
+    width: 64vw;
+    margin: 20px 10px 50px 15px;
+    overflow: scroll;
+}
+.back{
+ 
+        /* display: inline-block; */
+        background-color: #5902EC;
+        color: #fff;
+        width: 5vw;
+        height: 5vh;
+        font-weight: bold;
+        float: right;
+        margin-right: 0.8vw;
+        margin-top: 0.5vh;
+ 
+}

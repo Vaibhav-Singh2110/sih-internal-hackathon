@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #92A9BD;
+}
+body{
+    overflow: hidden;
+    
+}
+.navbar{
+    height: 50px;
+    width: 100vw;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    /* float: right; */
+  }
+  
+  .navbar li {
+    float: right;
+  }
+  
+  .navbar li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar li a:hover:not(.active) {
+    background-color: #35858B;
+  }
+  
+  .active {
+    background-color: #35858B;
+  }
+ .list{
+     background-color: #fff;
+     width: 33vw;
+     height: 83vh;
+     margin: 0 0 0 0.5vw;
+     margin-bottom: 12vh;
+     display: inline-block;
+     overflow: scroll;
+     overflow-x: hidden;
+     
+ }
+ .mark-attendance{
+     background-color: #fff;
+     width: 16vw;
+     height: 83vh;
+     margin-bottom: 12vh;
+     display: inline-block;
+     overflow: hidden;
+     overflow:scroll;
+     overflow-x: hidden;
+ }
+ .list2{
+    background-color: #fff;
+    width: 33vw;
+    height: 83vh;
+    margin: 0.5vh 0 0 0;
+    margin-bottom: 12vh;
+    display: inline-block;
+    overflow:scroll;
+    overflow-x: hidden;
+}
+/* @media screen and (min-width: 150px) {
+   .list{
+    width: 75vw;
+   }
+   .mark-attendance{
+       width: 23vw;
+   }
+  } */
+.LISTOFSTUDENTS{
+    background-color: #689cca;
+    width: 33vw;
+    height: 5vh;
+    font-size:larger;
+    font-weight: bolder;
+    text-align: center;
+    overflow-x: hidden;
+    position: fixed;
+
+}
+.mark{
+    background-color: #689cca;
+    width: 16vw;
+    height: 5vh;
+    font-size:larger;
+    font-weight: bolder;
+    text-align: center;
+    overflow-x: hidden;
+    position: fixed;
+}
+.names{
+  background-color: #fff;
+  letter-spacing: 1px;
+}
+.button-for-attendance{
+  background-color: #fff;
+}
+.present{
+  margin: 0 20px 0 26px;
+  background-color: #3ab13a;
+  color: #fff;
+  width: 70px;
+  border-radius: 8px;
+}
+.absent{
+  /* margin: 15px 0 0 140px; */
+  /* margin-right: -60px; */
+  margin-left: 38px;
+  background-color: #ff2600;
+  color: #fff;
+  width: 70px;
+  border-radius: 8px;
+  
+}
+.buttons{
+  background-color: #fff;
+}
+.save{
+  display: inline-block;
+  margin-left:92.8vw;
+  margin-top: 3vh;
+  background-color: #5902EC;
+  color: #fff;
+  width: 5vw;
+  height: 5vh;
+  font-weight: bold;
+}
+table,th{
+  border: 2px solid black;
+}
+.table{
+  margin: 5px 0 5px 35px;
+  width: 95.6vw;
+  height: 81vh;
+  background-color: white;
+  overflow:auto;
+}
+@media  screen and (max-width: 250px) {
+  /* horizontal scrollbar for tables if mobile screen */
+  .table {
+      /* overflow-x: auto;
+      display: block; */
+      width: 25vw;
+  }
+}
+.l{
+  padding: 2px 160px 2px 160px;
+  background-color: #9762f3;
+}
+.m{
+  padding: 2px 100px 2px 100px;
+  background-color: #772bfa;
+}
+.n{
+  padding: 2px 280px 2px 280px;
+  background-color: #9762f3;
+}
+.heading{
+    position: relative;
+}
+
+  .square {
+    --sqcolour:green;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 57px 0 57px;
+    background-color: var(--sqcolour);
+  }
+
