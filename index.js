@@ -35,8 +35,4 @@ function forgotPass(){
     .catch((error) => {
         document.getElementById("error").innerHTML = error.message
     });
-<<<<<<< HEAD
-
-=======
 }
->>>>>>> b7413bb22f6e0c8aff5657f8160bf0a3bd458fcb
