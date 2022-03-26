@@ -6,7 +6,7 @@ echo COMMITING
 git add .
 git commit -m "%username% edit"
 echo ===========
-echo PUSHPA
+echo PUSHING
 git push
 echo ===========
 echo DONE
