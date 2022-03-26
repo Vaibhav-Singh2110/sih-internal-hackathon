@@ -32,10 +32,10 @@ body{
   }
   
   .navbar li a:hover:not(.active) {
-    background-color: #35858b;
+    background-color: #0051ff79;
   }
   .active {
-    background-color: #35858b;
+    background-color: #0051ff79;
   }
   input[type=text], select, textarea {
     width: 100%;

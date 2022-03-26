@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #92A9BD;
+    background-color: #fff;
 }
 body{
     overflow: hidden;
@@ -33,11 +33,11 @@ body{
   }
   
   .navbar li a:hover:not(.active) {
-    background-color: #35858B;
+    background-color: #0051ff79;
   }
   
   .active {
-    background-color: #35858B;
+    background-color: #0051ff79;
   }
  .list{
      background-color: #fff;
@@ -79,7 +79,7 @@ body{
    }
   } */
 .LISTOFSTUDENTS{
-    background-color: #689cca;
+    
     width: 33vw;
     height: 5vh;
     font-size:larger;
@@ -90,7 +90,7 @@ body{
 
 }
 .mark{
-    background-color: #689cca;
+    background-color: #536a7e09;
     width: 16vw;
     height: 5vh;
     font-size:larger;
@@ -100,7 +100,7 @@ body{
     position: fixed;
 }
 .names{
-  background-color: #fff;
+  background-color: #d3f2f89c;
   letter-spacing: 1px;
 }
 .button-for-attendance{
@@ -140,10 +140,10 @@ table,th{
   border: 2px solid black;
 }
 .table{
-  margin: 5px 0 5px 35px;
+  margin: 0 0 5px 35px;
   width: 95.6vw;
   height: 81vh;
-  background-color: white;
+  background-color: rgb(247, 247, 247);
   overflow:auto;
 }
 @media  screen and (max-width: 250px) {
@@ -156,15 +156,15 @@ table,th{
 }
 .l{
   padding: 2px 160px 2px 160px;
-  background-color: #9762f3;
+  background-color: #6558f5;
 }
 .m{
   padding: 2px 100px 2px 100px;
-  background-color: #772bfa;
+  background-color: #6558f5;
 }
 .n{
   padding: 2px 280px 2px 280px;
-  background-color: #9762f3;
+  background-color: #6558f5;
 }
 .heading{
     position: relative;
@@ -172,10 +172,22 @@ table,th{
 
   .square {
     --sqcolour:green;
+
     height: 30px;
     width: 30px;
     background-color: rgb(255, 255, 255);
     margin: 0 57px 0 57px;
     background-color: var(--sqcolour);
   }
-
+  .square1 {
+    --sqcolour:red;
+    
+    height: 30px;
+    width: 30px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 57px 0 57px;
+    background-color: var(--sqcolour);
+  }
+h3{
+  margin: 0 0 0 2.5vw;
+}
