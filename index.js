@@ -38,7 +38,7 @@ firebase.auth().onAuthStateChanged((user) => {
         }
     }
     else if(sdnt.indexOf(user.uid)!== -1){
-        alert('student')
+        alert('WELCOME!')
         location.replace("pages/student/student.html")
     }
     else {
