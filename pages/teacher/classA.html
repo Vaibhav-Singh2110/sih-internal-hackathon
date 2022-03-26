@@ -56,13 +56,9 @@
       <tbody id="tbody1"></tbody>
     </table>
   </div>
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
-
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script> -->
   <script src="../../readWrite.js"></script>
   <script src="../../firebase.js"></script>
   <script src="../../welcome.js"></script>
@@ -85,6 +81,13 @@
     const analytics = getAnalytics(app);
     import { getDatabase, ref, child, onValue, get } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-database.js";
     const db = getDatabase();
+    function writeUserData(usn,attendance) {
+    set(ref(db, 'Attendance/' + Date.getDate()), {
+      Usn : usn.value,
+      Atten : attendance.value
+    });
+  }
+
     var slno = 0;
     var tbody = document.getElementById("tbody1");
     function addDay(usn, name) {
@@ -97,7 +100,9 @@
       btn.className = "present";
       btn.value = "present";
       btn.id = usn;
-      // btn.onclick = (function (usn , 'present') {
+      btn.onclick = function() {
+        writeUserData(this.id,this.value);
+      };
       //   set(ref(db, 'Attendance/' + Date.getDate()), {
       // Usn : usn.value,
       // Atten : attendance.value
@@ -107,7 +112,9 @@
       btn2.className = "present";
       btn2.value = "absent";
       btn2.id = usn;
-      // btn2.onclick = writeUserData(usn,0);
+       btn2.onclick = function() {
+        writeUserData(this.id,this.value);
+      };
 
       td1.innerHTML = usn;
       td2.innerHTML = name;
@@ -143,7 +150,7 @@
     }
 
     window.onload = getAllDataAtOnce('classA');
-    var btn1 = document.getElementById("1SI20IS001");
+    /*var btn1 = document.getElementById("1SI20IS001");
     var btn2 = document.getElementById("1SI20IS002");
     var btn3 = document.getElementById("1SI20IS003");
     var btn4 = document.getElementById("1SI20IS004");
@@ -154,7 +161,7 @@
     btn2.addEventListener('click', writeUserData(this.id, this.value));
     btn3.addEventListener('click', writeUserData(this.id, this.value));
     btn4.addEventListener('click', writeUserData(this.id, this.value));
-    btn5.addEventListener('click', writeUserData(this.id, this.value));
+    btn5.addEventListener('click', writeUserData(this.id, this.value));*/
 
   </script>
 </body>
