@@ -72,19 +72,40 @@
       var slno = 0;
       var tbody = document.getElementById("tbody1");
       function addDay(usn,name) {
-          let trow = document.createElement("tr");
-          let td1 = document.createElement('th');
-          let td2 = document.createElement('th');
-          let td3 = document.createElement('th');
+        let trow = document.createElement("tr");
+      let td1 = document.createElement('th');
+      let td2 = document.createElement('th');
+      let td3 = document.createElement('th');
+      var btn = document.createElement('input');
+      btn.type = "button";
+      btn.className = "present";
+      btn.value = "present";
+      btn.id = usn;
+      btn.onclick = function() {
+        writeUserData(this.id,this.value);
+      };
+      //   set(ref(db, 'Attendance/' + Date.getDate()), {
+      // Usn : usn.value,
+      // Atten : attendance.value
+      // });
+      var btn2 = document.createElement('input');
+      btn2.type = "button";
+      btn2.className = "present";
+      btn2.value = "absent";
+      btn2.id = usn;
+       btn2.onclick = function() {
+        writeUserData(this.id,this.value);
+      };
 
-          td1.innerHTML = usn;
-          td2.innerHTML = name;
-          td3.innerHTML = '';
+      td1.innerHTML = usn;
+      td2.innerHTML = name;
+      td3.appendChild(btn);
+      td3.appendChild(btn2);
 
-          trow.appendChild(td2);
-          trow.appendChild(td1);
-          trow.appendChild(td3);
-          tbody.appendChild(trow);
+      trow.appendChild(td2);
+      trow.appendChild(td1);
+      trow.appendChild(td3);
+      tbody.appendChild(trow);
 
       }
       function addAllDays(teach) {
