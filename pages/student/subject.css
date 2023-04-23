@@ -33,11 +33,11 @@ body{
   }
   
   .navbar li a:hover:not(.active) {
-    background-color: #35858B;
+    background-color: #0051ff79;
   }
   
   .active {
-    background-color: #35858B;
+    background-color: #0051ff79;
   }
  
   .subject-list{
